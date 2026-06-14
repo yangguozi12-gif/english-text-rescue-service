@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>英文文本急救 - 70元/次</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #151515;
+        --muted: #51616b;
+        --line: #e3e8e6;
+        --paper: #fbfaf6;
+        --card: #ffffff;
+        --green: #0f7a5c;
+        --green-soft: #dff3ec;
+        --blue-soft: #e6eef8;
+        --yellow-soft: #fff0d2;
+        --charcoal: #24333b;
+        --red: #f05d4f;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Segoe UI", sans-serif;
+        background: var(--paper);
+        color: var(--ink);
+      }
+
+      main {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 42px 20px 64px;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 28px;
+        align-items: center;
+      }
+
+      .panel {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 28px;
+      }
+
+      .eyebrow {
+        color: var(--muted);
+        font-size: 18px;
+        margin: 0 0 10px;
+      }
+
+      h1 {
+        font-size: clamp(42px, 7vw, 76px);
+        line-height: 1.02;
+        margin: 0;
+        letter-spacing: 0;
+      }
+
+      .subtitle {
+        color: var(--muted);
+        font-size: 24px;
+        line-height: 1.45;
+        margin: 18px 0 26px;
+      }
+
+      .price {
+        background: var(--green);
+        color: #fff;
+        border-radius: 8px;
+        padding: 22px 24px;
+        margin: 26px 0 22px;
+      }
+
+      .price strong {
+        display: block;
+        font-size: 44px;
+        line-height: 1;
+        margin-bottom: 8px;
+      }
+
+      .price span {
+        color: #e6fff5;
+        font-size: 18px;
+      }
+
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .chip {
+        border-radius: 999px;
+        padding: 10px 18px;
+        font-weight: 650;
+      }
+
+      .chip:nth-child(1) {
+        background: var(--green-soft);
+        color: #0f3b2e;
+      }
+
+      .chip:nth-child(2) {
+        background: var(--blue-soft);
+        color: #263c56;
+      }
+
+      .chip:nth-child(3) {
+        background: var(--yellow-soft);
+        color: #5b4617;
+      }
+
+      .image-stack {
+        display: grid;
+        gap: 14px;
+      }
+
+      .image-stack img {
+        display: block;
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid var(--line);
+        background: #fff;
+      }
+
+      section {
+        margin-top: 28px;
+      }
+
+      h2 {
+        margin: 0 0 16px;
+        font-size: 30px;
+        letter-spacing: 0;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 22px;
+        color: #262626;
+        line-height: 1.75;
+      }
+
+      .sample {
+        display: grid;
+        gap: 16px;
+      }
+
+      .sample-block {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 18px;
+        background: #fff;
+      }
+
+      .label {
+        color: var(--green);
+        font-weight: 700;
+        margin: 0 0 8px;
+      }
+
+      .sample-block p {
+        margin: 0;
+        color: #2a2a2a;
+        line-height: 1.65;
+      }
+
+      .cta {
+        background: var(--charcoal);
+        color: #fff;
+        border-radius: 8px;
+        padding: 26px;
+        display: grid;
+        gap: 12px;
+      }
+
+      .cta p {
+        margin: 0;
+        color: #dce7eb;
+        line-height: 1.6;
+      }
+
+      .cta strong {
+        color: #fff;
+        font-size: 24px;
+      }
+
+      .payment {
+        background: #fff;
+        color: var(--ink);
+        border-radius: 8px;
+        padding: 16px;
+        border: 1px dashed #9aa8af;
+      }
+
+      .fine-print {
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.6;
+      }
+
+      @media (max-width: 780px) {
+        main {
+          padding-top: 24px;
+        }
+
+        .hero,
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .panel {
+          padding: 22px;
+        }
+
+        .subtitle {
+          font-size: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="hero">
+        <div class="panel">
+          <p class="eyebrow">30-60 分钟交付</p>
+          <h1>英文文本急救</h1>
+          <p class="subtitle">简历、LinkedIn、求职邮件、外贸邮件、商品英文描述润色。把中式英文改成自然、专业、可直接发送的版本。</p>
+          <div class="price">
+            <strong>70 元 / 次</strong>
+            <span>约 $10，500 English words 或 800 中文字以内</span>
+          </div>
+          <div class="chips">
+            <span class="chip">自然</span>
+            <span class="chip">专业</span>
+            <span class="chip">可直接发</span>
+          </div>
+        </div>
+
+        <div class="image-stack">
+          <img src="sales-card-xhs.png" alt="英文文本急救服务封面" />
+        </div>
+      </div>
+
+      <section class="grid">
+        <div class="panel">
+          <h2>适合场景</h2>
+          <ul>
+            <li>英文简历 bullet point 优化</li>
+            <li>LinkedIn 简介润色</li>
+            <li>求职邮件 / cover letter 改写</li>
+            <li>外贸客户邮件润色</li>
+            <li>商品英文描述优化</li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h2>交付内容</h2>
+          <ul>
+            <li>一版可直接使用的英文</li>
+            <li>关键修改说明</li>
+            <li>一次小修改</li>
+            <li>不编造经历，不做考试作业</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="panel sample">
+        <h2>修改示例</h2>
+        <div class="sample-block">
+          <p class="label">原文</p>
+          <p>Helped customers with problems and answered messages. Used company tools.</p>
+        </div>
+        <div class="sample-block">
+          <p class="label">优化后</p>
+          <p>Resolved customer issues, updated CRM records, and shared recurring product feedback with the team.</p>
+        </div>
+        <img src="sample-card-xhs.png" alt="英文润色前后对比示例" />
+      </section>
+
+      <section class="cta">
+        <strong>下单方式</strong>
+        <p>请发送：原文、用途、想要的语气、是否有字数限制。可先免费改 2-3 句，看效果再下单。</p>
+        <div class="payment">付款方式：支持 PayPal 付款。确认服务内容后发送付款方式。</div>
+        <p class="fine-print">说明：使用 AI 辅助初稿，但会按实际用途人工整理语气和表达。只做真实文本优化，不提供虚假经历、考试代写、假评论等服务。</p>
+      </section>
+    </main>
+  </body>
+</html>
